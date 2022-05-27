@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/flash.ico.ico" type="image/x-icon">
+</head>
+<body>
+    <title>Formulario de contato</title>
+    <style>
+ /*********************    FORMULARIO DE CONTATO    ************************/
+       body{
+           font-family: Verdana, Times, sans-serif;
+       }
+       .box{
+           background-color: rgb(223, 13, 13);
+           padding:  15px;
+           border-radius: 15px;
+           width: 30%;
+       }
+       fieldset{
+           border: 3px solid;
+       }
+       legend{
+           border: 1px solid;
+           padding: 10px;
+           text-align: center;
+           background-color: white;
+           border-radius: 8px;
+       }
+       .inputUser{
+           background: none;
+           border: none;
+           border-bottom: 1px solid black;
+           outline: none;
+           color: white;
+           font-size: 15px;
+           width: 100%;
+           letter-spacing: 2px;
+       }
+       .labelInput{
+           pointer-events: none;
+           transition: .5s;
+       }
+       #data_nascimento{
+           border: none;
+           padding: 8px;
+           border-radius: 10px;
+           outline: none;
+           font-size: 15px;
+       }
+       #submit{
+        background-image: linear-gradient(to right, rgb(238, 13, 13), rgb(223, 13, 13));
+           
+           border: none;
+           padding: 15px;
+           border-radius: 10px;
+           font-size: 15px;
+           cursor: pointer;
+       }
+       #submit:hover{
+        background-image: linear-gradient(to right, rgb(53, 51, 51), rgb(8, 0, 0));
+        transition: 0.8s;
+       }
+ /******************        MENU       ************************/
+       .nav{
+        background: red;
+        width: 100%;
+        margin: 0% auto;
+       }
+       .nav ul{
+       list-style: none;
+       margin: 0 auto;
+       padding: 0;
+       width: 900px;
+       height: 50px;
+      }
+      .nav ul li{
+
+      display: inline-table;
+      height: 100%;
+      margin: 0 20px;
+     }
+     .nav ul li a{
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font: 1.3rem Verdana, times, sans-serif;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px;
+     }
+     .nav ul li a:hover{
+      background: #fff;
+      color: #f00;
+      transform: scale(1.3);
+      transition: .5s;
+     }
+/**************** CONTENT ***********************/
+.content{
+    margin: 0 auto;
+    width: 100%;
+}
+.titulo{
+    font: 2rem Verdana, Times, sans-serif;
+    font-weight: bold;
+    margin: 15px 0;
+}
+p{
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 15px;
+    margin: 0 15px 25px 0;
+}
+
+/***************************** FOOTER ************************/
+.footer{
+    background: #f00;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+ /*********************    BANNER      ************************/
+.banner img{
+ width: 100%;
+ height: 350px;
+ margin: 0%;
+}
+    </style>
+    <body>        
+        <div class="banner"> <img src="imagens/flash-eras-dos-quadrinhos.webp" alt="banner"> </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" >Página Inicial</a></li>
+                <li><a href="sobre.html" >Sobre Flash</a></li>
+                <li> <a href="quadrinhos.html" >Quadrinhos</a></li>
+                <li> <a href="seriados.html" >Seriados</a></li>
+                <li><a href="contato.html" >Contato</a></li>
+            </ul>        
+        </div>
+
+    <div class="content"> <div>
+      
+    <br><br>    
+        <h2 class="titulo"> Entre em contato conosco </h2>
+    <p> Abaixo listamos as formas de contato disponíveis em nossa loja.
+        Estamos ansiosos em lhe atender da melhor maneira possível.</p>   
+
+        <h3 class="Titulo">Central de Atendimento ao Cliente</h3>
+    <p> Tel fixo: (18) 3652-1217 </p>
+    <p> Whatsapp: (18) 99797-4205</p>
+    <p> E-mail: erikmarquesbenetti07@gmail.com</p>
+    
+        <h4 class="Titulo">Complete o Formulario</h4>
+    <p> Complete o formulario abaixo para que possamos entrar em contato, caso queria receber as novidades.</p>
+        
+        <div class="box">
+            <form method="post" action="" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend><b>Formulário de Contato</b></legend>
+                <br>
+                <div class="inputBox">
+                    <br>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="nome" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="nome" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br>
+                    <br>
+                    <label for="data_nascimento"><b>Data de nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+
+                    <input type="text" name="endereço" id="endereço" class="inputUser" required>
+                    <label for="endereço" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit" class="inputUser" required>
+            
+                </fieldset>
+            
+
+            </form>
+
+        </div>
+        <br>
+        <div class="footer">
+            <div class="copy">&copy; Todos os direitos reservados</div>
+            <div class="dev"> Marques Web </div>
+            <div class="dev"> CNPJ:45.248.671/0001-09</div>
+        </div>
+        </body>
+</html>
